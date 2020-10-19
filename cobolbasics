@@ -1,0 +1,50 @@
+      ******************************************************************
+      * Author:
+      * Date:
+      * Purpose:
+      * Tectonics: cobc
+      ******************************************************************
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. AULACOB.
+       AUTHOR      RUBENS.
+      ****************************************************************** 
+       DATA DIVISION.
+       FILE SECTION.
+       WORKING-STORAGE SECTION.
+       77 NUMERO PIC 9(04)V99.
+       77 NOME   PIC X(40).
+       77 MASC   PIC +ZZ9.
+      ****************************************************************** 
+       PROCEDURE DIVISION.
+       RUBENS.
+           DISPLAY 'QUAL SEU NOME? '
+           ACCEPT NOME
+           
+           DISPLAY 'QUAL SEU SALARIO? '
+           ACCEPT NUMERO
+           
+           
+      *     COMPUTE NUMERO = NUMERO + 10
+      *     MOVE NUMERO    TO MASC
+           
+           COMPUTE NUMERO = NUMERO 
+           + (NUMERO * 0.1).
+           MOVE NUMERO    TO MASC
+           DISPLAY 'REAJUSTE SALARIAL'
+           DISPLAY NUMERO
+           
+           STOP RUN.
+       
+       MAIN-PROCEDURE.
+       
+      *     DISPLAY "QUAL SEU NOME "
+      *     ACCEPT NOME
+      *     DISPLAY NOME
+      *     DISPLAY 'QUAL SEU SALARIO?'
+      *     ACCEPT NUMERO
+      *     DISPLAY NUMERO
+           .
+            STOP RUN
+            .
+            
+       END PROGRAM AULACOB.
